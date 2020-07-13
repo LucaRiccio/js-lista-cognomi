@@ -13,3 +13,6 @@ console.log(cognomi);
 for (var i = 0; i < cognomi.length; i++) {
   document.getElementById('lista').innerHTML += "<li>" + cognomi[i] + "</li>";
 }
+
+var posizione = cognomi.indexOf(parola) + 1;
+console.log(posizione);
