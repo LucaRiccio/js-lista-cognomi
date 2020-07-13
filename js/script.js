@@ -1,7 +1,3 @@
-// Chiedere all’utente il cognome
-// inserirlo in un array con altri cognomi: ‘Bianchi’, ‘Rossi’, ‘Duzioni’, ‘Balsano’, ‘Verdi’
-// stampa la lista ordinata alfabeticamente
-// scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 
 var cognomi = ["Bianchi","Rossi","Duzioni","Balsano","Verdi"];
 var cognomeUtente = prompt("Inserisci il tuo cognome");
@@ -15,4 +11,4 @@ for (var i = 0; i < cognomi.length; i++) {
 }
 
 var posizione = cognomi.indexOf(parola) + 1;
-console.log(posizione);
+document.getElementById('numero').innerHTML = "Posizione del nuovo cognome nella lista: " + posizione;
